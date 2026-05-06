@@ -22,7 +22,7 @@ const server = http.createServer(app);
 //  SOCKET SETUP
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173", // frontend URL
+        origin: "https://insta-clone-liart-one.vercel.app/", // frontend URL
         methods: ["GET", "POST"],
     },
 });
