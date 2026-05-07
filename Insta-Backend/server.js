@@ -20,6 +20,11 @@ const app = express();
 const server = http.createServer(app);
 
 //  SOCKET SETUP
+app.use(cors({
+    origin: "https://insta-clone-liart-one.vercel.app",
+    credentials: true
+}));
+
 const io = new Server(server, {
     cors: {
         origin: "https://insta-clone-liart-one.vercel.app",
