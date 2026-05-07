@@ -2,7 +2,7 @@
 
 import Conversation from "../models/Conversation.js";
 
-// 🔥 create or get existing conversation
+//  create or get existing conversation
 export const createConversation = async (req, res) => {
     try {
         const { receiverId } = req.body;

@@ -22,7 +22,7 @@ const server = http.createServer(app);
 //  SOCKET SETUP
 const io = new Server(server, {
     cors: {
-        origin: "https://insta-clone-liart-one.vercel.app/", // frontend URL
+        origin: "https://insta-clone-liart-one.vercel.app/", 
         methods: ["GET", "POST"],
     },
 });
@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("API is running ");
+    res.send("API is running ");    
 });
 
 app.get("/api/test", authMiddleware, (req, res) => {
